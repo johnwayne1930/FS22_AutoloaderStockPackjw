@@ -12,5 +12,6 @@ Mod for Farming Simulator 22
 * activate both mods ingame
 
 #### Installation ModHub: ####
-* download both [Pallet Autoload Specialization (Achimobil)](https://www.farming-simulator.com/mod.php?lang=en&mod_id=228819&title=fs2022) and [Autoload Stock Trailer Pack (johnwayne1930)](https://www.farming-simulator.com/mod.php?lang=en&mod_id=233456&title=fs2022) from the ingame Modhub
+* download both [Pallet Autoload Specialization (Achimobil)](https://www.farming-simulator.com/mod.php?lang=en&mod_id=228819&title=fs2022)  
+and [Autoload Stock Trailer Pack (johnwayne1930)](https://www.farming-simulator.com/mod.php?lang=en&mod_id=233456&title=fs2022) from the ingame Modhub
 * activate both mods ingame
