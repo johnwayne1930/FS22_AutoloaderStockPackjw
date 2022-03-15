@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>johnwayne1930</author>
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Autoload Stock Trailer Pack</en>
+    </title>
+	
+    <description>
+        <en><![CDATA[Various pure stock FS22 Trailer with Autoloader:
+
+- Boeckmann KK 3018/27 H:
+Capacity: max. 12 pallets
+Price:
+
+- Boeckmann MH-AL-4320:
+Capacity: max. 24 pallets
+Price:
+
+- Brantner DD 24073/2 XXL:
+Capacity: max. 64 pallets, 3 Cotton roundbales (bale wagon configuration)
+Price:
+
+- Bremer Transportwagen TP 500 S:
+Capacity: max. 40 pallets, 2 Cotton roundbales
+Price:
+
+- Farmtech DPW 1800:
+Capacity: max. 66 pallets, 4 Cotton roundbales
+Price:
+
+- Kroeger PWO 24:
+Capacity: max. 66 pallets, 4 Cotton roundbales
+Price:
+
+- Krone Profi LinerCapacity:
+Capacity: max. 80 pallets, 5 Cotton roundbales
+Price:
+
+- Welger DK 115:
+Capacity: max. 18 pallets (bale wagon configuration)
+Price:
+
+(*Number of pallets can vary depending on the product.)
+
+FS22 Pallet Autoloader Specialization is required to make the Autoload work!]]>
+</en>
+        <de><![CDATA[Verschiedene Standard LS22 Anhänger mit Autoloader:
+
+- Boeckmann KK 3018/27 H:
+Kapazität: max. 12 Paletten
+Preis:
+
+- Boeckmann MH-AL-4320:
+Kapazität: max. 24 Paletten
+Preis:
+
+- Brantner DD 24073/2 XXL:
+Kapazität: max. 64 Paletten, 3 Baumwollrundballen  (Ballenwagen Konfiguration)
+Preis:
+
+- Bremer Transportwagen TP 500 S:
+Kapazität: max. 40 Paletten, 2 Baumwollrundballen
+Preis:
+
+- Farmtech DPW 1800:
+Kapazität: max. 66 Paletten, 4 Baumwollrundballen
+Preis:
+
+- Kroeger PWO 24:
+Kapazität: max. 66 Paletten, 4 Baumwollrundballen
+Preis:
+
+- Krone Profi Liner:
+Kapazität: max. 80 Paletten, 5 Baumwollrundballen
+Preis:
+
+- Welger DK 115:
+Kapazität: max. 18 Paletten  (Ballenwagen Konfiguration)
+Preis:
+
+(*Anzahl der Paletten kann abhängig vom Produkt variieren.)
+
+FS22 Paletten Autoloader Spezialisierung ist erforderlich, damit der Autoload funktioniert!]]>
+</de>
+    </description>
+	
+    <iconFilename>store_autoLoadStockTrailerPack.png</iconFilename>
+	
+	<multiplayer supported="true" />
+	
+	<!-- <l10n filenamePrefix="l10n" /> -->
+	
+    <storeItems>
+        <storeItem xmlFilename="dd24073/dd24073.xml"/>
+        <storeItem xmlFilename="dk115/dk115.xml"/>
+        <storeItem xmlFilename="dpw1800/dpw1800.xml"/>
+        <storeItem xmlFilename="kk301827H/kk301827H.xml"/>
+        <storeItem xmlFilename="mhal4320/mhal4320.xml"/>
+        <storeItem xmlFilename="profiLiner/profiLiner.xml"/>
+        <storeItem xmlFilename="transportwagen/transportwagen.xml"/>
+        <storeItem xmlFilename="pwo24/pwo24.xml"/>
+    </storeItems>
+	
+	<vehicleTypes>
+		<type name="PalletAutoLoaderTrailer" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+		</type>
+		<type name="PalletAutoLoaderDynMATrailer" parent="dynamicMountAttacherTrailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+		</type>
+	</vehicleTypes>	
+	
+</modDesc>
