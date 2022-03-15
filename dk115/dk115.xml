@@ -10,7 +10,7 @@
         <functions>
             <function>$l10n_function_tipper</function>
         </functions>
-        <image>$data/vehicles/welger/dk115/store_dk115.png</image>
+        <image>dk115/store_dk115.png</image>
         <price>11500</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
@@ -19,9 +19,9 @@
         <shopTranslationOffset>0 -0.124 0</shopTranslationOffset>
         <shopRotationOffset>0.069 0 0</shopRotationOffset>
         <shopLoadingDelay initial="0.25"/>
-        <vertexBufferMemoryUsage>2793216</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>472064</indexBufferMemoryUsage>
-        <textureMemoryUsage>1310720</textureMemoryUsage>
+        <vertexBufferMemoryUsage>2737152</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>462336</indexBufferMemoryUsage>
+        <textureMemoryUsage>1179648</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <audioMemoryUsage>0</audioMemoryUsage>
@@ -50,7 +50,7 @@
             <configuration name="trailer"       index="1" />
             <configuration name="tensionBelts"  index="1" />
             <configuration name="dischargeable" index="1" />
-            <configuration name="aPalletAutoLoader" index="2" />
+            <configuration name="aPalletAutoLoader" index="3" />
         </configurationSet>
         <configurationSet name="$l10n_configuration_valueLoadingWagon" isDefault="true">
             <configuration name="fillVolume"     index="2" />
@@ -60,21 +60,31 @@
             <configuration name="tensionBelts"   index="2" />
             <configuration name="dischargeable"  index="2" />
             <configuration name="designMaterial" index="1" />
-            <configuration name="aPalletAutoLoader" index="1" />
+            <!-- <configuration name="aPalletAutoLoader" index="1" /> -->
         </configurationSet>
     </configurationSets>
 	
 	<aPalletAutoLoader>
-		<aPalletAutoLoaderConfigurations>
-			<aPalletAutoLoaderConfiguration maxObjects="18" maxMass="18" useBales="false" useTensionBelts="false" supportedObject="data/objects/pallets">
+		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_on" maxObjects="18" maxMass="18" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1 0 0" lenght="4.2" width="2" height="2.4"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1 0 0" lenght="4.5" width="2" height="2.4"/>
 			</aPalletAutoLoaderConfiguration>
-			<aPalletAutoLoaderConfiguration />
+			
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_off" maxObjects="18" maxMass="18" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets">
+				<trigger node="triggerNode"/>
+				<pickupTriggers>
+					<pickupTrigger node="pickupTriggerLeft"/>
+					<pickupTrigger node="pickupTriggerRight"/>
+				</pickupTriggers>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1 0 0" lenght="4.5" width="2" height="2.4"/>
+			</aPalletAutoLoaderConfiguration>
+			
+			<aPalletAutoLoaderConfiguration /> <!-- configuration for autoload off -->
 		</aPalletAutoLoaderConfigurations>
 	</aPalletAutoLoader>
 

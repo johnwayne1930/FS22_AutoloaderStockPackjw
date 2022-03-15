@@ -7,7 +7,7 @@
         <functions>
             <function>$l10n_function_baleTrailer</function>
         </functions>
-        <image>$data/vehicles/kroeger/pwo24/store_pwo24.png</image>
+        <image>pwo24/store_pwo24.png</image>
         <price>21500</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
@@ -16,9 +16,9 @@
         <shopTranslationOffset>0 0.024 0</shopTranslationOffset>
         <shopRotationOffset>0.02 0 0</shopRotationOffset>
         <shopLoadingDelay initial="0.3"/>
-        <vertexBufferMemoryUsage>2430464</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>388352</indexBufferMemoryUsage>
-        <textureMemoryUsage>1638400</textureMemoryUsage>
+        <vertexBufferMemoryUsage>2338816</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>371968</indexBufferMemoryUsage>
+        <textureMemoryUsage>1572864</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <audioMemoryUsage>0</audioMemoryUsage>
@@ -36,11 +36,12 @@
             <joint component1="2" component2="3" node="componentJointDrawbar" rotLimit="0 0 0" transLimit="0 0 0" />
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TRAILER" />
     </base>
 	
 	<aPalletAutoLoader>
-		<aPalletAutoLoaderConfigurations>
-			<aPalletAutoLoaderConfiguration maxObjects="66" maxMass="66" useBales="false" useTensionBelts="false" supportedObject="data/objects/pallets">
+		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -48,7 +49,17 @@
 				</pickupTriggers>
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.67" width="2.5" height="2.5"/>
 			</aPalletAutoLoaderConfiguration>
-			<aPalletAutoLoaderConfiguration />
+			
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_off" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets">
+				<trigger node="triggerNode"/>
+				<pickupTriggers>
+					<pickupTrigger node="pickupTriggerLeft"/>
+					<pickupTrigger node="pickupTriggerRight"/>
+				</pickupTriggers>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.67" width="2.5" height="2.5"/>
+			</aPalletAutoLoaderConfiguration>
+			
+			<aPalletAutoLoaderConfiguration /> <!-- configuration for autoload off -->
 		</aPalletAutoLoaderConfigurations>
 	</aPalletAutoLoader>
 
@@ -170,17 +181,17 @@
         <configurationSet name="$l10n_configuration_valueDesign01">
             <configuration name="folding" index="1"/>
             <configuration name="tensionBelts" index="2"/>
-			<configuration name="aPalletAutoLoader" index="1" />
+			<!-- <configuration name="aPalletAutoLoader" index="1" /> -->
         </configurationSet>
         <configurationSet name="$l10n_configuration_valueDesign02">
             <configuration name="folding" index="2"/>
             <configuration name="tensionBelts" index="1"/>
-			<configuration name="aPalletAutoLoader" index="2" />
+			<configuration name="aPalletAutoLoader" index="3" />
         </configurationSet>
         <configurationSet name="$l10n_configuration_valueDesign03">
             <configuration name="folding" index="3"/>
             <configuration name="tensionBelts" index="1"/>
-			<configuration name="aPalletAutoLoader" index="2" />
+			<configuration name="aPalletAutoLoader" index="3" />
         </configurationSet>
     </configurationSets>
 
