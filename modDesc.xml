@@ -8,42 +8,42 @@
         <en>Autoload Stock Trailer Pack</en>
     </title>
 
-    <description>
-        <en><![CDATA[
+	<description>
+		<en><![CDATA[
 Various pure stock FS22 trailer with autoload for pallets, round- and squarebales, cotton roundbales:
 FS22 Pallet Autoloader Specialization is required to make the autoload work!
 
 - Boeckmann KK 3018/27 H
 Capacity: max. 12 pallets
-Price: 12,000€
+Price: 12,000$
 
 - Boeckmann MH-AL-4320
 Capacity: max. 24 pallets
-Price: 8,000€
+Price: 8,000$
 
 - Brantner DD 24073/2 XXL
 Capacity: max. 64 pallets, 3 Cotton roundbales (bale wagon configuration)
-Price: 39,650€
+Price: 39,650$
 
 - Bremer Transportwagen TP 500 S
 Capacity: max. 40 pallets, 2 Cotton roundbales
-Price: 15,000€
+Price: 15,000$
 
 - Farmtech DPW 1800
 Capacity: max. 66 pallets, 4 Cotton roundbales
-Price: 19,500€
+Price: 19,500$
 
 - Kroeger PWO 24
 Capacity: max. 66 pallets, 4 Cotton roundbales (Design 1)
-Price: 21,500€
+Price: 21,500$
 
 - Krone Profi Liner
 Capacity: max. 80 pallets, 5 Cotton roundbales
-Price: 29,500€
+Price: 29,500$
 
 - Welger DK 115
 Capacity: max. 18 pallets (bale wagon configuration)
-Price: 11,500€
+Price: 11,500$
 
 (*Number of pallets can vary depending on the product.)
 
@@ -65,9 +65,8 @@ Changelog:
 - new mod icon
 - new store icon, with AL symbol for better distinction in store
 - added FS22_aPalletAutoLoader as dependency
-- fixed DK115 loadingBase trigger height
-		]]></en>
-        <de><![CDATA[
+- fixed DK115 loadingBase trigger height]]></en>
+		<de><![CDATA[
 Verschiedene standard FS22 Anhänger mit Autoloader für Paletten, Rund- und Quaderballen sowie Baumwollrundballen:
 FS22 Paletten Autoloader Spezialisierung ist erforderlich, damit der Autoload funktioniert!
 
@@ -123,15 +122,14 @@ Changelog:
 - neues Mod Icon
 - neues Store Icon, mit AL symbol zur besseren unterscheidung
 - FS22_aPalletAutoLoader als voraussetzung hinzugefügt
-- DK 115 Ladeflächen trigger höhe korrigiert
-		]]></de>
-    </description>
+- DK 115 Ladeflächen trigger höhe korrigiert]]></de>
+	</description>
 
 	<dependencies>
 		<dependency>FS22_aPalletAutoLoader</dependency>
 	</dependencies>	
 
-    <iconFilename>icon_autoLoadStockTrailerPack.png</iconFilename>
+	<iconFilename>icon_autoLoadStockTrailerPack.png</iconFilename>
 
 	<multiplayer supported="true" />
 
@@ -150,16 +148,16 @@ Changelog:
 		</text>
 	</l10n>		
 		
-    <storeItems>
-        <storeItem xmlFilename="dd24073/dd24073.xml"/>
-        <storeItem xmlFilename="dk115/dk115.xml"/>
-        <storeItem xmlFilename="dpw1800/dpw1800.xml"/>
-        <storeItem xmlFilename="kk301827H/kk301827H.xml"/>
-        <storeItem xmlFilename="mhal4320/mhal4320.xml"/>
-        <storeItem xmlFilename="profiLiner/profiLiner.xml"/>
-        <storeItem xmlFilename="transportwagen/transportwagen.xml"/>
-        <storeItem xmlFilename="pwo24/pwo24.xml"/>
-    </storeItems>
+	<storeItems>
+		<storeItem xmlFilename="dd24073/dd24073.xml"/>
+		<storeItem xmlFilename="dk115/dk115.xml"/>
+		<storeItem xmlFilename="dpw1800/dpw1800.xml"/>
+		<storeItem xmlFilename="kk301827H/kk301827H.xml"/>
+		<storeItem xmlFilename="mhal4320/mhal4320.xml"/>
+		<storeItem xmlFilename="profiLiner/profiLiner.xml"/>
+		<storeItem xmlFilename="transportwagen/transportwagen.xml"/>
+		<storeItem xmlFilename="pwo24/pwo24.xml"/>
+	</storeItems>
 
 	<vehicleTypes>
 		<type name="PalletAutoLoaderTrailer" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
