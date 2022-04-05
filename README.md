@@ -1,5 +1,5 @@
-# Autoload Stock Trailer Pack v1.0.0.0
-Mod for Farming Simulator 22  
+# Autoload Stock Trailer Pack v1.0.5.1
+Mod for Farming Simulator 22   
 
 #### Description
 Various pure stock FS22 trailer with autoload for pallets, round- and squarebales, cotton roundbales.  
@@ -25,3 +25,4 @@ _%\Documents\My Games\FarmingSimulator2022\mods_ directory
 * download both [Pallet Autoload Specialization (Achimobil)](https://farming-simulator.com/mod.php?mod_id=228819) and  
 [Autoload Stock Trailer Pack (johnwayne1930)](https://farming-simulator.com/mod.php?mod_id=233456) from the ingame Modhub
 * activate both mods ingame
+
