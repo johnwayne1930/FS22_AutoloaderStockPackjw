@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>DK 115 Autoloader</name>
+        <name>DK 115 Autoload</name>
         <specs>
             <combination xmlFilename="$data/vehicles/welger/dk115/dk115.xml"/>
         </specs>
@@ -52,7 +52,8 @@
             <configuration name="dischargeable" index="1" />
             <configuration name="aPalletAutoLoader" index="3" />
         </configurationSet>
-        <configurationSet name="$l10n_configuration_valueLoadingWagon" isDefault="true">
+        <!-- <configurationSet name="$l10n_configuration_valueLoadingWagon" isDefault="true"> -->
+        <configurationSet name="$l10n_configuration_valueAutoload" isDefault="true">
             <configuration name="fillVolume"     index="2" />
             <configuration name="fillUnit"       index="2" />
             <configuration name="trailer"        index="2" />
@@ -66,7 +67,7 @@
 	
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_on" maxObjects="18" maxMass="18" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="18" maxMass="18" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -75,7 +76,7 @@
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1 0 0" lenght="4.5" width="2" height="2.4"/>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_off" maxObjects="18" maxMass="18" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="18" maxMass="18" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>

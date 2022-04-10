@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>PWO 24 Autoloader</name>
+        <name>PWO 24 Autoload</name>
         <functions>
             <function>$l10n_function_baleTrailer</function>
         </functions>
@@ -41,7 +41,7 @@
 	
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -50,7 +50,7 @@
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.67" width="2.5" height="2.5"/>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_off" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -178,7 +178,8 @@
     </licensePlates>
 
     <configurationSets title="$l10n_configuration_design">
-        <configurationSet name="$l10n_configuration_valueDesign01">
+        <!-- <configurationSet name="$l10n_configuration_valueDesign01"> -->
+        <configurationSet name="$l10n_configuration_valueAutoload">
             <configuration name="folding" index="1"/>
             <configuration name="tensionBelts" index="2"/>
 			<!-- <configuration name="aPalletAutoLoader" index="1" /> -->

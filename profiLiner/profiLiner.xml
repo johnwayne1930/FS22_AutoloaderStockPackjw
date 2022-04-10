@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>Profi Liner Autoloader</name>
+        <name>Profi Liner Autoload</name>
         <specs>
             <combination filterCategory="trucks" />
             <combination xmlFilename="$data/vehicles/krampe/dolly10L/dolly10L.xml"/>
@@ -40,20 +40,22 @@
 
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_on" maxObjects="80" maxMass="80" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="80" maxMass="80" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
+					<pickupTrigger node="pickupTriggerBack"/>
 				</pickupTriggers>
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.2 0 0" lenght="13" width="2.4" height="2.7"/>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_off" maxObjects="80" maxMass="80" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="80" maxMass="80" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
+					<pickupTrigger node="pickupTriggerBack"/>
 				</pickupTriggers>
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.2 0 0" lenght="13" width="2.4" height="2.7"/>
 			</aPalletAutoLoaderConfiguration>
@@ -730,5 +732,6 @@
         <i3dMapping id="pickupTriggerRight" node="0>2|1" />
         <i3dMapping id="triggerNode" node="0>2|2" />
         <i3dMapping id="loadingBase" node="0>2|3" />
+        <i3dMapping id="pickupTriggerBack" node="0>2|4" />
     </i3dMappings>
 </vehicle>
