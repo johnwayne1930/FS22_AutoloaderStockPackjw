@@ -2,7 +2,7 @@
 <modDesc descVersion="64">
 
     <author>johnwayne1930</author>
-    <version>1.0.5.1</version>
+    <version>1.0.5.2</version>
 
     <title>
         <en>Autoload Stock Trailer Pack</en>
@@ -47,25 +47,17 @@ Price: 11,500$
 
 (*Number of pallets can vary depending on the product.)
 
-Known bugs:
-As of FS22 patch 1.3 the tension belts on MP can cause problems.
-I recommend to choose manual tension belts for MP games.
-
 Changelog:
+1.0.5.2
+- removed configuration option for automatic/manually tension belts as it is now a function in FS22_aPalletAutoLoader v1.7.1.0
+In case of oddly behavior eg. not able to select bales as loading type, just reconfigure the trailer in the workshop with "bales loading on"
+Automatic tension belts if disabled can be enabled using key assignment defined in FS22_aPalletAutoLoader v1.7.1.0
+- added configuration option for bale loading support on/off
+- increased the loading trigger width for DD 24073/2 XXL, DPW 1800 and PWO 24 it should now match the size of the loading area
+- added loading trigger for Profi Liner back door, wich should be open, best used for loading in truck terminals or with forklift
+
 1.0.5.1
-- added option for all trailers to activate/deactivate automatic tension belts after loading/unloading
- 
-1.0.5.0
-- added aquare bale support and automatic tension belts from FS22_aPalletAutoLoader v1.5.0.0
-
-1.0.4.0
-- added round bale support from FS22_aPalletAutoLoader v1.4.0.0
-
-1.0.3.0
-- new mod icon
-- new store icon, with AL symbol for better distinction in store
-- added FS22_aPalletAutoLoader as dependency
-- fixed DK115 loadingBase trigger height]]></en>
+- added option for all trailers to activate/deactivate automatic tension belts after loading/unloading]]></en>
 		<de><![CDATA[
 Verschiedene standard FS22 Anhänger mit Autoloader für Paletten, Rund- und Quaderballen sowie Baumwollrundballen:
 FS22 Paletten Autoloader Spezialisierung ist erforderlich, damit der Autoload funktioniert!
@@ -104,25 +96,17 @@ Preis: 11.500€
 
 (*Anzahl der Paletten kann abhängig vom Produkt variieren.)
 
-Bekannte Probleme:
-Mit FS22 Patch 1.3 kann es bei MP Spielen zu problemen mit den Spanngurten kommen.
-Ich rate dazu die Spanngurte in MP Spielen auf manuell zu stellen.
-
 Changelog:
+1.0.5.2
+- Konfigurationsoption für automatische/manuelle Spanngurte entfernt da dies nun als Funktion in FS22_aPalletAutoLoader v1.7.1.0 integriert ist
+Sollten Ballen nicht mehr als Ladetyp angezeigt werden, einfach den Anhänger in der Werkstatt mit "Ballen laden Ein" neu konfigurieren
+Wenn die automatischen Spanngurte noch deaktiviert sind können diese mit der in FS22_aPalletAutoLoader v1.7.1.0 definierten Tastenbelegung aktiviert werden
+- Konfigurationsoption für Ballenladeunterstützung An/Aus hinzugefügt
+- die Ladetrigger breite von DD 24073/2 XXL, DPW 1800 und PWO 24 erhöht, sollte jetzt ähnlich der Ladefläche sein
+- Ladetrigger am Heck des Profi Liner hinzugefügt, Hecktüre sollte geöffnet werden, am besten mit LKW-Terminal oder Gabelstapler verwenden
+
 1.0.5.1
-- Option zu allen Anhängern hinzugefügt mit der sich die automatischen Spanngurte aktivieren/deaktivieren lassen
-
-1.0.5.0
-- Quaderballen unterstützung und automatische Spanngurte von FS22_aPalletAutoLoader v1.5.0.0 hinzugefügt
-
-1.0.4.0
-- Rundballen unterstützung von FS22_aPalletAutoLoader v1.4.0.0 hinzugefügt
-
-1.0.3.0
-- neues Mod Icon
-- neues Store Icon, mit AL symbol zur besseren unterscheidung
-- FS22_aPalletAutoLoader als voraussetzung hinzugefügt
-- DK 115 Ladeflächen trigger höhe korrigiert]]></de>
+- Option zu allen Anhängern hinzugefügt mit der sich die automatischen Spanngurte aktivieren/deaktivieren lassen]]></de>
 	</description>
 
 	<dependencies>
@@ -134,17 +118,20 @@ Changelog:
 	<multiplayer supported="true" />
 
 	<l10n>
+		<text name="configuration_valueAutoload">
+			<en>Autoload</en>
+		</text>
 		<text name="configuration_aPalletAutoloader_active">
-			<en>AL: Tension belts</en>
-			<de>AL: Spanngurte</de>
+			<en>AL: Bale loading</en>
+			<de>AL: Ballen laden</de>
 		</text>
-		<text name="configuration_tensionBelt_on">
-			<en>Automatic</en>
-			<de>Automatisch</de>
+		<text name="configuration_bales_on">
+			<en>On</en>
+			<de>Ein</de>
 		</text>
-		<text name="configuration_tensionBelt_off">
-			<en>Manually</en>
-			<de>Manuell</de>
+		<text name="configuration_bales_off">
+			<en>Off</en>
+			<de>Aus</de>
 		</text>
 	</l10n>		
 		

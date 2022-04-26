@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>KK 3018/27 H Autoloader</name>
+        <name>KK 3018/27 H Autoload</name>
         <specs>
             <combination xmlFilename="$data/vehicles/lizard/pickup1986/pickup1986.xml" />
             <combination xmlFilename="$data/vehicles/lizard/pickup2017/pickup2017.xml" />
@@ -41,7 +41,7 @@
 
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_on" maxObjects="12" maxMass="12" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="12" maxMass="12" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -50,7 +50,7 @@
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="0.83 0 0" lenght="2.8" width="1.7" height="2"/>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_tensionBelt_off" maxObjects="12" maxMass="12" useBales="true" useTensionBelts="false" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="12" maxMass="12" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
