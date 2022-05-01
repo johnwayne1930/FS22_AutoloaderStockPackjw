@@ -123,7 +123,7 @@
     </connectionHoses>
 
     <licensePlates>
-        <licensePlate node="licensePlate" position="BACK" preferedType="ELONGATED" placementArea="0.2 0.2 0.2 0.2"/>
+        <licensePlate node="licensePlate" position="BACK" preferedType="ELONGATED" placementArea="0.06 0.28 0.09 0.28"/>
     </licensePlates>
 
     <dynamicallyLoadedParts>

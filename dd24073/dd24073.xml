@@ -47,7 +47,7 @@
             <configuration name="trailer"       index="1" />
             <configuration name="cover"         index="2" />
             <configuration name="tensionBelts"  index="1" />
-            <configuration name="dischargeable" index="1" />            
+            <configuration name="dischargeable" index="1" />
 			<!-- <configuration name="aPalletAutoLoader" index="1" /> -->
         </configurationSet>
         <configurationSet name="$l10n_configuration_valueDefault">
@@ -55,7 +55,7 @@
             <configuration name="fillUnit"      index="2" />
             <configuration name="trailer"       index="2" />
             <configuration name="tensionBelts"  index="2" />
-            <configuration name="dischargeable" index="2" />            
+            <configuration name="dischargeable" index="2" />
 			<configuration name="aPalletAutoLoader" index="3" />
         </configurationSet>
         <configurationSet name="$l10n_configuration_valueExtension">
@@ -63,11 +63,11 @@
             <configuration name="fillUnit"      index="3" />
             <configuration name="trailer"       index="2" />
             <configuration name="tensionBelts"  index="2" />
-            <configuration name="dischargeable" index="2" />            
+            <configuration name="dischargeable" index="2" />
 			<configuration name="aPalletAutoLoader" index="3" />
         </configurationSet>
     </configurationSets>
-		
+
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
 			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="64" maxMass="64" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
@@ -229,12 +229,12 @@
         <hubs>
             <color0>SHARED_DA_METAL_BLACK</color0>
             <color1 material="1">SHARED_DA_METAL_BLACK</color1>
-            <hub linkNode="wheelFrontLeft"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" />
-            <hub linkNode="wheelFrontRight"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" />
-            <hub linkNode="wheelMiddleLeft"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" />
-            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" />
-            <hub linkNode="wheelBackLeft"    filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" />
-            <hub linkNode="wheelBackRight"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" />
+            <hub linkNode="wheelFrontLeft"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelFrontRight"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelMiddleLeft"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelBackLeft"    filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelBackRight"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" offset="0.008"/>
         </hubs>
     </wheels>
 

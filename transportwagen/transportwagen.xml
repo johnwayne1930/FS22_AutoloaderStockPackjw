@@ -213,6 +213,10 @@
                     <tensionBelt startNode="startPoint06" endNode="startPoint06End" />
                     <tensionBelt startNode="startPoint07" endNode="startPoint07End" />
                     <tensionBelt startNode="startPoint08" endNode="startPoint08End" offsetRight="0.2"/>
+                    <sounds>
+                        <addBelt    template="beltOpen"  volumeScale="0.7"/>
+                        <removeBelt template="beltClose" volumeScale="0.7"/>
+                    </sounds>
                 </tensionBelts>
             </tensionBeltsConfiguration>
         </tensionBeltsConfigurations>
