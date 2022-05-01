@@ -1,4 +1,4 @@
-# Autoload Stock Trailer Pack v1.0.5.2
+# Autoload Stock Trailer Pack v1.1.0.0
 Mod for Farming Simulator 22   
 
 #### Description
