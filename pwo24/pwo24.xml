@@ -41,7 +41,7 @@
 	
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -1 0" UnloadRightOffset="-2.8 -1 0" UnloadBackOffset="0 -1 -10.5">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -50,7 +50,7 @@
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.67" width="2.5" height="2.5"/>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -1 0" UnloadRightOffset="-2.8 -1 0" UnloadBackOffset="0 -1 -10.5">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -94,16 +94,16 @@
         <hubs>
             <color0 useBaseColor="true"/>
             <color1>SHARED_GREY3</color1>
-            <hub linkNode="wheelFrontLeft"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.33 0.33" />
-            <hub linkNode="wheelFrontRight"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.33 0.33" />
-            <hub linkNode="wheelMiddleLeft"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.33 0.33" />
-            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.33 0.33" />
-            <hub linkNode="wheelBackLeft"    filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.33 0.33" />
-            <hub linkNode="wheelBackRight"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.33 0.33" />
+            <hub linkNode="wheelFrontLeft"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.33 0.33" offset="0.01"/>
+            <hub linkNode="wheelFrontRight"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.33 0.33" offset="0.01"/>
+            <hub linkNode="wheelMiddleLeft"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.33 0.33" offset="0.01"/>
+            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.33 0.33" offset="0.01"/>
+            <hub linkNode="wheelBackLeft"    filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.33 0.33" offset="0.01"/>
+            <hub linkNode="wheelBackRight"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.33 0.33" offset="0.01"/>
         </hubs>
     </wheels>
 
-    <rimColorConfigurations useDefaultColors="true" defaultColorIndex="4" price="300">
+    <rimColorConfigurations useDefaultColors="true" price="300">
         <rimColorConfiguration name="$l10n_configuration_valueDefault" color="SHARED_WHITE1" material="18" />
     </rimColorConfigurations>
 

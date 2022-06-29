@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="64">
+<modDesc descVersion="66">
 
     <author>johnwayne1930</author>
-    <version>1.0.5.2</version>
+    <version>1.1.0.0</version>
 
     <title>
         <en>Autoload Stock Trailer Pack</en>
@@ -41,6 +41,10 @@ Price: 21,500$
 Capacity: max. 80 pallets, 5 Cotton roundbales
 Price: 29,500$
 
+- Salek ANS-1900
+Capacity: max. 4 pallets
+Price: 3,500$
+
 - Welger DK 115
 Capacity: max. 18 pallets (bale wagon configuration)
 Price: 11,500$
@@ -48,6 +52,12 @@ Price: 11,500$
 (*Number of pallets can vary depending on the product.)
 
 Changelog:
+1.1.0.0
+- added Salek ANS-1900
+- update descVersion
+- adopted xml ajustments from basegame for dd24073, dpw1800, mhal4320, pwo24 and transportwagen
+- adjusted unloading positions
+
 1.0.5.2
 - removed configuration option for automatic/manually tension belts as it is now a function in FS22_aPalletAutoLoader v1.7.1.0
 In case of oddly behavior eg. not able to select bales as loading type, just reconfigure the trailer in the workshop with "bales loading on"
@@ -55,9 +65,7 @@ Automatic tension belts if disabled can be enabled using key assignment defined 
 - added configuration option for bale loading support on/off
 - increased the loading trigger width for DD 24073/2 XXL, DPW 1800 and PWO 24 it should now match the size of the loading area
 - added loading trigger for Profi Liner back door, wich should be open, best used for loading in truck terminals or with forklift
-
-1.0.5.1
-- added option for all trailers to activate/deactivate automatic tension belts after loading/unloading]]></en>
+]]></en>
 		<de><![CDATA[
 Verschiedene standard FS22 Anhänger mit Autoloader für Paletten, Rund- und Quaderballen sowie Baumwollrundballen:
 FS22 Paletten Autoloader Spezialisierung ist erforderlich, damit der Autoload funktioniert!
@@ -90,6 +98,10 @@ Preis: 21.500€
 Kapazität: max. 80 Paletten, 5 Baumwollrundballen
 Preis: 29.500€
 
+- Salek ANS-1900
+Kapazität: max. 4 Paletten
+Preis: 3.500€
+
 - Welger DK 115
 Kapazität: max. 18 Paletten  (Ballenwagen Konfiguration)
 Preis: 11.500€
@@ -97,6 +109,12 @@ Preis: 11.500€
 (*Anzahl der Paletten kann abhängig vom Produkt variieren.)
 
 Changelog:
+1.1.0.0
+- Salek ANS-1900 hinzugefügt
+- Update descVersion
+- Xml anpassungen aus dem Basisspiel übernommen für dd24073, dpw1800, mhal4320, pwo24 und transportwagen
+- Abladepositionen angepasst
+
 1.0.5.2
 - Konfigurationsoption für automatische/manuelle Spanngurte entfernt da dies nun als Funktion in FS22_aPalletAutoLoader v1.7.1.0 integriert ist
 Sollten Ballen nicht mehr als Ladetyp angezeigt werden, einfach den Anhänger in der Werkstatt mit "Ballen laden Ein" neu konfigurieren
@@ -104,9 +122,7 @@ Wenn die automatischen Spanngurte noch deaktiviert sind können diese mit der in
 - Konfigurationsoption für Ballenladeunterstützung An/Aus hinzugefügt
 - die Ladetrigger breite von DD 24073/2 XXL, DPW 1800 und PWO 24 erhöht, sollte jetzt ähnlich der Ladefläche sein
 - Ladetrigger am Heck des Profi Liner hinzugefügt, Hecktüre sollte geöffnet werden, am besten mit LKW-Terminal oder Gabelstapler verwenden
-
-1.0.5.1
-- Option zu allen Anhängern hinzugefügt mit der sich die automatischen Spanngurte aktivieren/deaktivieren lassen]]></de>
+]]></de>
 	</description>
 
 	<dependencies>
@@ -136,14 +152,15 @@ Wenn die automatischen Spanngurte noch deaktiviert sind können diese mit der in
 	</l10n>		
 		
 	<storeItems>
+		<storeItem xmlFilename="ans1900/ans1900.xml"/>
 		<storeItem xmlFilename="dd24073/dd24073.xml"/>
 		<storeItem xmlFilename="dk115/dk115.xml"/>
 		<storeItem xmlFilename="dpw1800/dpw1800.xml"/>
 		<storeItem xmlFilename="kk301827H/kk301827H.xml"/>
 		<storeItem xmlFilename="mhal4320/mhal4320.xml"/>
 		<storeItem xmlFilename="profiLiner/profiLiner.xml"/>
-		<storeItem xmlFilename="transportwagen/transportwagen.xml"/>
 		<storeItem xmlFilename="pwo24/pwo24.xml"/>
+		<storeItem xmlFilename="transportwagen/transportwagen.xml"/>
 	</storeItems>
 
 	<vehicleTypes>

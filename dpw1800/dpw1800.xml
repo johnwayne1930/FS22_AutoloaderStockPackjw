@@ -41,7 +41,7 @@
 	
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -0.85 0" UnloadRightOffset="-2.8 -0.85 0" UnloadBackOffset="0 -0.85 -10.2">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -50,7 +50,7 @@
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.67" width="2.5" height="2.5"/>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -0.85 0" UnloadRightOffset="-2.8 -0.85 0" UnloadBackOffset="0 -0.85 -10.2">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -74,18 +74,18 @@
                         <physics tipOcclusionAreaGroupId="1" restLoad="1.0" repr="wheelFrontRight"  forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" yOffset="0.01" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
-                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleLeft"  forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" />
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleLeft"  forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" frictionScale="1.75" />
                         <wheelChock parkingNode="wheelChock01_01"/>
                         <wheelChock parkingNode="wheelChock01_02" isInverted="true" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
-                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleRight" forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" />
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleRight" forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" frictionScale="1.75" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
-                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackLeft"    forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" />
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackLeft"    forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" frictionScale="1.9" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/trelleborg/AW305/480_45R17.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
-                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackRight"   forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" />
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackRight"   forcePointRatio="0.25" initialCompression="8" suspTravel="0.1" spring="75" mass="0.5" damper="60" brakeFactor="0.25" yOffset="0.01" frictionScale="1.9" />
                     </wheel>
                 </wheels>
             </wheelConfiguration>
