@@ -53,8 +53,8 @@ Price: 11,500$
 
 Changelog:
 1.1.1.0
-- Adjusted maximum objects for various cargo in all trailers. (needs FS22_aPalletAutoLoader v1.8.0.0 or higher)
-- Squarebales-120 are now supported (needs FS22_aPalletAutoLoader v1.8.0.0 or higher)
+- Adjusted maximum objects for various cargo in all trailers. (requires FS22_aPalletAutoLoader v1.8.0.0 or above)
+- Squarebales-120 are now supported (requires FS22_aPalletAutoLoader v1.8.0.0 or above)
 - Adopted xml ajustments from basegame for ans1600 and profiLiner
 - Adjusted mod description
 
