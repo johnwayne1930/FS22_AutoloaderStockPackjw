@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="66">
+<modDesc descVersion="67">
 
     <author>johnwayne1930</author>
-    <version>1.1.0.0</version>
+    <version>1.1.1.0</version>
 
     <title>
         <en>Autoload Stock Trailer Pack</en>
@@ -38,7 +38,7 @@ Capacity: max. 66 pallets, 4 Cotton roundbales (Design 1)
 Price: 21,500$
 
 - Krone Profi Liner
-Capacity: max. 80 pallets, 5 Cotton roundbales
+Capacity: max. 75 pallets, 5 Cotton roundbales
 Price: 29,500$
 
 - Salek ANS-1900
@@ -52,19 +52,17 @@ Price: 11,500$
 (*Number of pallets can vary depending on the product.)
 
 Changelog:
+1.1.1.0
+- Adjusted maximum objects for various cargo in all trailers. (needs FS22_aPalletAutoLoader v1.8.0.0 or higher)
+- Squarebales-120 are now supported (needs FS22_aPalletAutoLoader v1.8.0.0 or higher)
+- Adopted xml ajustments from basegame for ans1600 and profiLiner
+- Adjusted mod description
+
 1.1.0.0
 - added Salek ANS-1900
 - update descVersion
 - adopted xml ajustments from basegame for dd24073, dpw1800, mhal4320, pwo24 and transportwagen
 - adjusted unloading positions
-
-1.0.5.2
-- removed configuration option for automatic/manually tension belts as it is now a function in FS22_aPalletAutoLoader v1.7.1.0
-In case of oddly behavior eg. not able to select bales as loading type, just reconfigure the trailer in the workshop with "bales loading on"
-Automatic tension belts if disabled can be enabled using key assignment defined in FS22_aPalletAutoLoader v1.7.1.0
-- added configuration option for bale loading support on/off
-- increased the loading trigger width for DD 24073/2 XXL, DPW 1800 and PWO 24 it should now match the size of the loading area
-- added loading trigger for Profi Liner back door, wich should be open, best used for loading in truck terminals or with forklift
 ]]></en>
 		<de><![CDATA[
 Verschiedene standard FS22 Anhänger mit Autoloader für Paletten, Rund- und Quaderballen sowie Baumwollrundballen:
@@ -109,19 +107,17 @@ Preis: 11.500€
 (*Anzahl der Paletten kann abhängig vom Produkt variieren.)
 
 Changelog:
+1.1.1.0
+- Maximale Objekte für diverses Ladegut in allen Anhängern angepasst. (benötigt FS22_aPalletAutoLoader v1.8.0.0 oder höher)
+- Support für Quaderballen-120 (benötigt FS22_aPalletAutoLoader v1.8.0.0 oder höher)
+- Xml anpassungen aus dem Basisspiel übernommen für ans1600 und profiLiner
+- Modbeschreibung angepasst
+
 1.1.0.0
 - Salek ANS-1900 hinzugefügt
 - Update descVersion
 - Xml anpassungen aus dem Basisspiel übernommen für dd24073, dpw1800, mhal4320, pwo24 und transportwagen
 - Abladepositionen angepasst
-
-1.0.5.2
-- Konfigurationsoption für automatische/manuelle Spanngurte entfernt da dies nun als Funktion in FS22_aPalletAutoLoader v1.7.1.0 integriert ist
-Sollten Ballen nicht mehr als Ladetyp angezeigt werden, einfach den Anhänger in der Werkstatt mit "Ballen laden Ein" neu konfigurieren
-Wenn die automatischen Spanngurte noch deaktiviert sind können diese mit der in FS22_aPalletAutoLoader v1.7.1.0 definierten Tastenbelegung aktiviert werden
-- Konfigurationsoption für Ballenladeunterstützung An/Aus hinzugefügt
-- die Ladetrigger breite von DD 24073/2 XXL, DPW 1800 und PWO 24 erhöht, sollte jetzt ähnlich der Ladefläche sein
-- Ladetrigger am Heck des Profi Liner hinzugefügt, Hecktüre sollte geöffnet werden, am besten mit LKW-Terminal oder Gabelstapler verwenden
 ]]></de>
 	</description>
 
