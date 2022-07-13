@@ -465,7 +465,7 @@
           <Shape shapeId="39" name="pickupTriggerLeft" translation="2.8 1 -0.9" scale="2.5 2 9" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="224" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <Shape shapeId="39" name="pickupTriggerRight" translation="-2.8 1 -0.9" scale="2.5 2 9" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="225" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <Shape shapeId="39" name="triggerNode" translation="0 2 -0.82" scale="1.6 1.6 9" kinematic="true" trigger="true" collisionMask="1092616192" nodeId="226" materialIds="21" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-          <TransformGroup name="loadingBase" translation="0 1.15 3.8766" nodeId="227"/>
+          <TransformGroup name="loadingBase" translation="0 1.15 3.89" nodeId="227"/>
         </TransformGroup>
       </Shape>
       <Shape shapeId="40" name="dpw1800_axis_component2" translation="0 0.645445 3.46117" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="228" materialIds="15" castsShadows="true" receiveShadows="true" nonRenderable="true">

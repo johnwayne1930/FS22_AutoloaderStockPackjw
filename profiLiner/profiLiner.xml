@@ -40,7 +40,7 @@
 
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="75" maxMass="75" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="3 -0.9 0" UnloadRightOffset="-3 -0.9 0" UnloadBackOffset="0 -0.9 -14">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="80" maxMass="80" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="3 -0.9 0" UnloadRightOffset="-3 -0.9 0" UnloadBackOffset="0 -0.9 -14">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -48,12 +48,9 @@
 					<pickupTrigger node="pickupTriggerBack"/>
 				</pickupTriggers>
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.2 0 0" lenght="13" width="2.4" height="2.7"/>
-				<autoLoadObjectSettings>
-                    <autoLoadObjectSetting name="squarebale120" maxObjects="280"/>
-                </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="75" maxMass="75" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="3 -0.9 0" UnloadRightOffset="-3 -0.9 0" UnloadBackOffset="0 -0.9 -14">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="80" maxMass="80" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="3 -0.9 0" UnloadRightOffset="-3 -0.9 0" UnloadBackOffset="0 -0.9 -14">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -240,8 +237,8 @@
             <part node="coverLeft_closed"   startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
             <part node="coverLeft_openBack" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
 
-            <part node="planksLeftFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="-0.01 0 0 0" shaderEndValues="15.01 0 0 0" />
-            <part node="planksLeftUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="-0.01 0 0 0" />
+            <part node="planksLeftFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0" />
+            <part node="planksLeftUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0" />
 
             <part node="barLeft01" startTime="4.0" endTime="4.333"  startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65" />
             <part node="barLeft01" startTime="4.333" endTime="6.0"  startTrans="1.247 3.882 3.317" endTrans="1.247 3.882 -4.697" />
@@ -279,8 +276,8 @@
             <part node="coverLeft_closed"    startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
             <part node="coverLeft_openFront" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
 
-            <part node="planksLeftFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="-0.01 0 0 0" shaderEndValues="15.01 0 0 0" />
-            <part node="planksLeftUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="-0.01 0 0 0" />
+            <part node="planksLeftFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0" />
+            <part node="planksLeftUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0" />
 
             <part node="barLeft01" startTime="1.0" endTime="1.222"  startRot="0.0 0.0 0.0" endRot="0.0 0.0 0.65" />
             <part node="barLeft01" startTime="1.222" endTime="1.667"  startTrans="1.247 3.882 3.317" endTrans="1.247 3.882 4.408" />
@@ -319,8 +316,8 @@
             <part node="coverRight_closed"   startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
             <part node="coverRight_openBack" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
 
-            <part node="planksRightFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="-0.01 0 0 0" shaderEndValues="15.01 0 0 0" />
-            <part node="planksRightUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="-0.01 0 0 0" />
+            <part node="planksRightFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0" />
+            <part node="planksRightUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0" />
 
             <part node="barRight01" startTime="4.0" endTime="4.333"  startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65" />
             <part node="barRight01" startTime="4.333" endTime="6.0"  startTrans="-1.247 3.882 3.317" endTrans="-1.247 3.882 -4.697" />
@@ -358,8 +355,8 @@
             <part node="coverRight_closed"    startTime="0.0" endTime="0.1" startVisibility="true" endVisibility="false"/>
             <part node="coverRight_openFront" startTime="0.0" endTime="0.1" startVisibility="false" endVisibility="true"/>
 
-            <part node="planksRightFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="-0.01 0 0 0" shaderEndValues="15.01 0 0 0" />
-            <part node="planksRightUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="-0.01 0 0 0" />
+            <part node="planksRightFolded"   startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="0 0 0 0" shaderEndValues="15.01 0 0 0" />
+            <part node="planksRightUnfolded" startTime="0.1" endTime="1.0" shaderParameter="hideByIndex" shaderStartValues="15.01 0 0 0" shaderEndValues="0 0 0 0" />
 
             <part node="barRight01" startTime="1.0" endTime="1.222"  startRot="0.0 0.0 0.0" endRot="0.0 0.0 -0.65" />
             <part node="barRight01" startTime="1.222" endTime="1.667"  startTrans="-1.247 3.882 3.317" endTrans="-1.247 3.882 4.408" />
