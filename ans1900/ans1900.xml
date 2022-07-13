@@ -19,12 +19,6 @@
         <category>trailers</category>
         <shopTranslationOffset>0 0.05 0</shopTranslationOffset>
         <shopRotationOffset>0 -1.102 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>536576</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>99072</indexBufferMemoryUsage>
-        <textureMemoryUsage>851968</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
     </storeData>
 
     <base>
@@ -66,7 +60,11 @@
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="0.7 0 0" lenght="2.4" width="1.4" height="2.5"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="0.775 0 0" lenght="2.5" width="1.55" height="2.6"/>
+				<autoLoadObjectSettings>
+                    <autoLoadObjectSetting name="euroPalletOversize" maxObjects="2"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="18"/>
+                </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
 			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="9" maxMass="9" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.3 -0.31 0" UnloadRightOffset="-2.3 -0.31 0" UnloadBackOffset="0 -0.31 -3">
@@ -75,7 +73,7 @@
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="0.7 0 0" lenght="2.4" width="1.4" height="2.5"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="0.775 0 0" lenght="2.5" width="1.55" height="2.6"/>
 			</aPalletAutoLoaderConfiguration>
 			
 			<aPalletAutoLoaderConfiguration /> <!-- configuration for autoload off -->
@@ -285,7 +283,7 @@
                 <objectChange node="doorBackPart_collision" compoundChildActive="false" compoundChildInactive="true"/>
             </fillUnitConfiguration>
 
-            <fillUnitConfiguration name="$l10n_configuration_capacityX" price="0" params="1600" >
+            <fillUnitConfiguration name="$l10n_configuration_capacityX" price="0" params="1600" allowAILoading="true">
                 <fillUnits>
                     <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="1600" allowAILoading="true">
                         <exactFillRootNode node="exactFillRootNode" />
@@ -361,7 +359,7 @@
             <dischargeableConfiguration />
 
             <dischargeableConfiguration>
-				<dischargeNode node="dischargeNodeBack" emptySpeed="180" fillUnitIndex="1" unloadInfoIndex="1" >
+				<dischargeNode node="dischargeNodeBack" emptySpeed="180" fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true">
 					<info width="1.5" length="1.0" />
 					<effects>
 						<effectNode effectClass="TipEffect">
