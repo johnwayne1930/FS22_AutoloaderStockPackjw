@@ -2,7 +2,7 @@
 <modDesc descVersion="67">
 
     <author>johnwayne1930</author>
-    <version>1.1.1.0</version>
+    <version>1.1.2.0</version>
 
     <title>
         <en>Autoload Stock Trailer Pack</en>
@@ -52,17 +52,14 @@ Price: 11,500$
 (*Number of pallets can vary depending on the product.)
 
 Changelog:
+1.1.2.0
+- usePalletWeightReduction configuration from FS22_aPalletAutoLoader v1.8.4.1 disabled
+
 1.1.1.0
 - Adjusted maximum objects for various cargo in all trailers. (requires FS22_aPalletAutoLoader v1.8.0.0 or above)
 - Squarebales-120 are now supported (requires FS22_aPalletAutoLoader v1.8.0.0 or above)
 - Adopted xml ajustments from basegame for ans1600 and profiLiner
 - Adjusted mod description
-
-1.1.0.0
-- added Salek ANS-1900
-- update descVersion
-- adopted xml ajustments from basegame for dd24073, dpw1800, mhal4320, pwo24 and transportwagen
-- adjusted unloading positions
 ]]></en>
 		<de><![CDATA[
 Verschiedene standard FS22 Anhänger mit Autoloader für Paletten, Rund- und Quaderballen sowie Baumwollrundballen:
@@ -107,17 +104,14 @@ Preis: 11.500€
 (*Anzahl der Paletten kann abhängig vom Produkt variieren.)
 
 Changelog:
+1.1.2.0
+- usePalletWeightReduction Konfiguration aus FS22_aPalletAutoLoader v1.8.4.1 deaktiviert
+
 1.1.1.0
 - Maximale Objekte für diverses Ladegut in allen Anhängern angepasst. (benötigt FS22_aPalletAutoLoader v1.8.0.0 oder höher)
 - Support für Quaderballen-120 (benötigt FS22_aPalletAutoLoader v1.8.0.0 oder höher)
 - Xml anpassungen aus dem Basisspiel übernommen für ans1600 und profiLiner
 - Modbeschreibung angepasst
-
-1.1.0.0
-- Salek ANS-1900 hinzugefügt
-- Update descVersion
-- Xml anpassungen aus dem Basisspiel übernommen für dd24073, dpw1800, mhal4320, pwo24 und transportwagen
-- Abladepositionen angepasst
 ]]></de>
 	</description>
 
