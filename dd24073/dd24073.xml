@@ -76,9 +76,9 @@
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="7.5" width="2.5" height="2.6"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="7.5" width="2.5" height="2.7"/>
 				<autoLoadObjectSettings>
-                    <autoLoadObjectSetting name="squarebale120" maxObjects="120"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="200" height="2"/>
                 </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
@@ -88,7 +88,7 @@
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="7.5" width="2.5" height="2.6"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="7.5" width="2.5" height="2.7"/>
 			</aPalletAutoLoaderConfiguration>
 			
 			<aPalletAutoLoaderConfiguration /> <!-- configuration for autoload off -->

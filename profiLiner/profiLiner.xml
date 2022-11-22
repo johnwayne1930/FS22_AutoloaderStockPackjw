@@ -49,7 +49,7 @@
 				</pickupTriggers>
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1.2 0 0" lenght="13" width="2.4" height="2.7"/>
 				<autoLoadObjectSettings>
-                    <autoLoadObjectSetting name="squarebale120" maxObjects="280"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="300" height="2"/>
                 </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			

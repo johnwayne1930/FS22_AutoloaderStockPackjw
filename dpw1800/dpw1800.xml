@@ -47,10 +47,10 @@
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.6"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.7"/>
 				<autoLoadObjectSettings>
                     <autoLoadObjectSetting name="liquidTank" maxObjects="6"/>
-                    <autoLoadObjectSetting name="squarebale120" maxObjects="175"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="200" height="2"/>
                 </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
@@ -60,7 +60,10 @@
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.6"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.7"/>
+				<autoLoadObjectSettings>
+                    <autoLoadObjectSetting name="liquidTank" maxObjects="6"/>
+                </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
 			<!-- <aPalletAutoLoaderConfiguration /> --> <!-- configuration for autoload off -->

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<l10n>
+    <translationContributors>nagor</translationContributors>
+    <texts>
+        <text name="configuration_valueAutoload" text="Автопогрузка" />
+        <text name="configuration_aPalletAutoloader_active" text="Автопогрузка тюков" />
+        <text name="configuration_bales_on" text="Вкл" />
+        <text name="configuration_bales_off" text="Выкл" />
+    </texts>
+</l10n>
