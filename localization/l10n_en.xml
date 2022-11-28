@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<l10n>
+    <!-- <translationContributors></translationContributors> -->
+    <texts>
+        <text name="configuration_valueAutoload" text="Autoload" />
+        <text name="configuration_aPalletAutoloader_active" text="AL: Bale loading" />
+        <text name="configuration_bales_on" text="On" />
+        <text name="configuration_bales_off" text="Off" />
+    </texts>
+</l10n>

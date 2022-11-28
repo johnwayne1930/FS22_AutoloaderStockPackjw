@@ -41,26 +41,29 @@
 	
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -0.85 0" UnloadRightOffset="-2.8 -0.85 0" UnloadBackOffset="0 -0.85 -10.2">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="66" maxMass="66" useBales="true" useTensionBelts="true" usePalletWeightReduction="false" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -0.85 0" UnloadRightOffset="-2.8 -0.85 0" UnloadBackOffset="0 -0.85 -10.2">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.6"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.7"/>
 				<autoLoadObjectSettings>
                     <autoLoadObjectSetting name="liquidTank" maxObjects="6"/>
-                    <autoLoadObjectSetting name="squarebale120" maxObjects="175"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="200" height="2"/>
                 </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -0.85 0" UnloadRightOffset="-2.8 -0.85 0" UnloadBackOffset="0 -0.85 -10.2">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="66" maxMass="66" useBales="false" useTensionBelts="true" usePalletWeightReduction="false" supportedObject="data/objects/pallets" UnloadLeftOffset="2.8 -0.85 0" UnloadRightOffset="-2.8 -0.85 0" UnloadBackOffset="0 -0.85 -10.2">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
 					<pickupTrigger node="pickupTriggerRight"/>
 				</pickupTriggers>
-                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.6"/>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.25 0 0" lenght="9.74" width="2.5" height="2.7"/>
+				<autoLoadObjectSettings>
+                    <autoLoadObjectSetting name="liquidTank" maxObjects="6"/>
+                </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
 			<!-- <aPalletAutoLoaderConfiguration /> --> <!-- configuration for autoload off -->

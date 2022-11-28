@@ -42,7 +42,7 @@
 
 	<aPalletAutoLoader>
 		<aPalletAutoLoaderConfigurations title="$l10n_configuration_aPalletAutoloader_active">
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="24" maxMass="24" useBales="true" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.4 -0.35 0" UnloadRightOffset="-2.4 -0.35 0" UnloadBackOffset="0 -0.35 -4.8">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_on" maxObjects="24" maxMass="24" useBales="true" useTensionBelts="true" usePalletWeightReduction="false" supportedObject="data/objects/pallets" UnloadLeftOffset="2.4 -0.35 0" UnloadRightOffset="-2.4 -0.35 0" UnloadBackOffset="0 -0.35 -4.8">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
@@ -50,13 +50,13 @@
 				</pickupTriggers>
                 <loadArea baseNode="loadingBase" leftRightCornerOffset="1 0 0" lenght="4.2" width="2" height="2.4"/>
 				<autoLoadObjectSettings>
-                    <autoLoadObjectSetting name="squarebale120" maxObjects="36"/>
+                    <autoLoadObjectSetting name="squarebale120" maxObjects="100" height="2"/>
                     <autoLoadObjectSetting name="squarebale220" maxObjects="0"/>
                     <autoLoadObjectSetting name="squarebale240" maxObjects="0"/>
                 </autoLoadObjectSettings>
 			</aPalletAutoLoaderConfiguration>
 			
-			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="24" maxMass="24" useBales="false" useTensionBelts="true" supportedObject="data/objects/pallets" UnloadLeftOffset="2.4 -0.35 0" UnloadRightOffset="-2.4 -0.35 0" UnloadBackOffset="0 -0.35 -4.8">
+			<aPalletAutoLoaderConfiguration name="$l10n_configuration_bales_off" maxObjects="24" maxMass="24" useBales="false" useTensionBelts="true" usePalletWeightReduction="false" supportedObject="data/objects/pallets" UnloadLeftOffset="2.4 -0.35 0" UnloadRightOffset="-2.4 -0.35 0" UnloadBackOffset="0 -0.35 -4.8">
 				<trigger node="triggerNode"/>
 				<pickupTriggers>
 					<pickupTrigger node="pickupTriggerLeft"/>
