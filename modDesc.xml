@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="71">
+<modDesc descVersion="72">
 
     <author>johnwayne1930</author>
     <version>1.1.2.0</version>
@@ -53,7 +53,7 @@ Price: 11,500$
 
 Changelog:
 1.1.2.0
-- usePalletWeightReduction configuration from FS22_aPalletAutoLoader v1.8.4.1 disabled
+- usePalletWeightReduction from FS22_aPalletAutoLoader v1.8.4.1 disabled
 - Various adjustments to FS22_aPalletAutoLoader v1.8.6.0
 - RU translation added
 
@@ -107,7 +107,7 @@ Preis: 11.500€
 
 Changelog:
 1.1.2.0
-- usePalletWeightReduction Konfiguration aus FS22_aPalletAutoLoader v1.8.4.1 deaktiviert
+- usePalletWeightReduction aus FS22_aPalletAutoLoader v1.8.4.1 deaktiviert
 - Verschiedene anpassungen an FS22_aPalletAutoLoader v1.8.6.0
 - RU übersetzung hinzugefügt
 
